@@ -1,6 +1,7 @@
 
 .odd {background-color: #ffc0cb;
-font-family: 'Verdana', 'DejaVuSans', sans-serif;}
+    /*Solution does not apply quitations around font names, although I saw no change when applied like this*/
+font-family: Verdana, DejaVuSans, sans-serif;}
 
 #second {color:#4169e1;
 font-size:36px;}
