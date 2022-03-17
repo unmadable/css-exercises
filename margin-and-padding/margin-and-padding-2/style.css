@@ -7,21 +7,43 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  /*Added padding: correct*/
+ padding:10px;
 }
 
 .title {
   background: #e3f4ff;
+  padding:10px;
+  /*Margin top at 0: correct.
+  Added padding: correct.
+  Solution also added margin-bottom and changed font-size*/
+margin-top:0px;
 }
 
 .content {
   background: #e3f4ff;
+  /*Added margin-botom:correct.
+  Added padding: correct.
+  Solution did not add margin top, instead they added margin botton on title class*/
+  padding:20px 10px;
+  margin-bottom: 10px;
+  margin-top:-10px;
 }
 
 .button-container {
   background: #e3f4ff;
+  /*Added text align and padding: correct*/
+  text-align:center;
+  padding:10px;
 }
 
 button {
+  /*Changed display and added padding: correct.
+  Solution set margin at 0 and auto.*/
+  display:block;
   background: white;
   border: 1px solid #eee;
+  padding: 10px 20px;
+  margin:auto;
 }
+
