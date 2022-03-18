@@ -1,6 +1,15 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*Yes to display*/
+  display: flex;
+  /* I added 'flex: 1 1 auto;' which was not used in the solution*/
+  /*Yes to align-items*/
+  align-items: center;
+  /*Yes to padding*/
+ padding: 10px;
+ /*Yes to justify-content*/
+justify-content: space-between;
 }
 
 .logo {
@@ -14,6 +23,13 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /*Yes to display*/
+  display: flex;
+  /*I added 'justify-content: space-between;' and 'column-gap: 10px;' which were not used in solution*/
+  /*Solution used the following: margin, padding, gap*/
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 a {
@@ -23,3 +39,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
