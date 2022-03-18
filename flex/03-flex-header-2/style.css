@@ -9,17 +9,19 @@ body {
 }
 
 .header {
+  /*Initial parameters*/
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /*Solution sets justify-content to space-between*/
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
 }
 
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height:  48px;
+/*Solution sets classes left and right with same parameters: display flex, align-items center, gap 16px*/
+.left {display: flex;
+margin-right: auto;
 }
 
 .logo {
@@ -27,6 +29,28 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+}
+
+.links {display: flex;
+column-gap: 16px;
+padding-left: 16px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+/*I set ul parameters on class links. Display flex ok. Solution adds margin 0, padding 0 and gap 16px*/
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.right {display: flex;
+align-items: center;
+column-gap: 16px;
 }
 
 button {
@@ -37,12 +61,10 @@ button {
   padding: 8px 24px;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height:  48px;
 }
