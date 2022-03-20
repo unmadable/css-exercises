@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -25,3 +29,36 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/*Solution used flex 1, align items center, and flex direction column*/
+.header {display: flex;
+  justify-content: space-between;
+}
+
+.content {display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-links, .right-links {display: flex;
+  padding: 15px;
+  gap: 15px;
+}
+
